@@ -114,7 +114,7 @@ Raises `socket.timeout`
 ### pymongo
 
 ```python
-MongoClient(host, port, connectTimeoutMS=1000, socketTimeoutMS=1000, serverSelectionTimeoutMS=1000)
+MongoClient(connectTimeoutMS=1000, socketTimeoutMS=1000, serverSelectionTimeoutMS=1000)
 ```
 
 Default: 20s connect timeout, 30s server selection timeout
