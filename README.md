@@ -163,7 +163,7 @@ Raises `sqlalchemy.exc.OperationalError`
 ### subprocess
 
 ```python
-run(cmd, timeout=1)
+subprocess.run(cmd, timeout=1)
 ```
 
 Raises `subprocess.TimeoutExpired`
