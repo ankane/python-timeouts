@@ -13,6 +13,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [elasticsearch](#elasticsearch)
 - [opensearch-py](#opensearch-py)
 - [pymemcache](#pymemcache)
+- [pymongo](#pymongo)
 - [psycopg2](#psycopg2)
 - [redis](#redis)
 - [requests](#requests)
@@ -69,6 +70,14 @@ Client(host, connect_timeout=1, timeout=1)
 ```
 
 Raises `socket.timeout`
+
+### pymongo
+
+```python
+MongoClient(host, port, connectTimeoutMS=1000, socketTimeoutMS=1000, serverSelectionTimeoutMS=1000)
+```
+
+Raises `pymongo.errors.ServerSelectionTimeoutError`
 
 ### redis
 

@@ -4,6 +4,7 @@ elasticsearch
 opensearch-py
 psycopg2-binary
 pymemcache
+pymongo
 pytest
 pytest-asyncio
 redis
