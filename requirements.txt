@@ -1,6 +1,7 @@
 aiohttp
 boto3
 elasticsearch
+opensearch-py
 psycopg2-binary
 pytest
 pytest-asyncio

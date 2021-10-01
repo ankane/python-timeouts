@@ -11,6 +11,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [aiohttp](#aiohttp)
 - [boto3](#boto3)
 - [elasticsearch](#elasticsearch)
+- [opensearch-py](#opensearch-py)
 - [psycopg2](#psycopg2)
 - [redis](#redis)
 - [requests](#requests)
@@ -43,6 +44,14 @@ Elasticsearch(timeout=1)
 ```
 
 Raises `elasticsearch.exceptions.ConnectionError`
+
+### opensearch-py
+
+```python
+OpenSearch(timeout=1)
+```
+
+Raises `opensearchpy.exceptions.ConnectionError`
 
 ### psycopg2
 
