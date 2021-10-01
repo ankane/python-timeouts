@@ -1,4 +1,5 @@
 aiohttp
+asyncpg
 boto3
 elasticsearch
 mysqlclient

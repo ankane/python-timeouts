@@ -9,6 +9,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 ## Packages
 
 - [aiohttp](#aiohttp)
+- [asyncpg](#asyncpg)
 - [boto3](#boto3)
 - [elasticsearch](#elasticsearch)
 - [mysqlclient](#mysqlclient)
@@ -27,6 +28,14 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 timeout = aiohttp.ClientTimeout(total=1)
 async with aiohttp.ClientSession(timeout=timeout) as session:
     # ...
+```
+
+Raises `asyncio.exceptions.TimeoutError`
+
+### asyncpg
+
+```python
+asyncpg.connect(timeout=1)
 ```
 
 Raises `asyncio.exceptions.TimeoutError`
