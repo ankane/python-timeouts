@@ -10,4 +10,4 @@ class TestOpensearchPy(TestTimeouts):
 
     def test_read(self):
         with self.raises(ConnectionError):
-            OpenSearch([self.read_url()], timeout=1).cluster.health()
+            OpenSearch([self.read_url()], timeout=1, max_retries=0).cluster.health()
