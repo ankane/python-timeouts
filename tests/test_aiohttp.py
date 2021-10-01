@@ -11,7 +11,7 @@ class TestAiohttp(TestTimeouts):
             timeout = aiohttp.ClientTimeout(total=1)
             async with aiohttp.ClientSession(timeout=timeout) as session:
                 async with session.get(self.connect_url()) as resp:
-                        await resp.text()
+                    await resp.text()
 
     @pytest.mark.asyncio
     async def test_read(self):
@@ -19,4 +19,4 @@ class TestAiohttp(TestTimeouts):
             timeout = aiohttp.ClientTimeout(total=1)
             async with aiohttp.ClientSession(timeout=timeout) as session:
                 async with session.get(self.read_url()) as resp:
-                        await resp.text()
+                    await resp.text()
