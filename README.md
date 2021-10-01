@@ -10,6 +10,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 
 - [aiohttp](#aiohttp)
 - [boto3](#boto3)
+- [elasticsearch](#elasticsearch)
 - [psycopg2](#psycopg2)
 - [redis](#redis)
 - [requests](#requests)
@@ -34,6 +35,14 @@ Raises
 
 - `botocore.exceptions.ConnectTimeoutError` on connect timeout
 - `botocore.exceptions.ReadTimeoutError` on read timeout
+
+### elasticsearch
+
+```python
+Elasticsearch(timeout=1)
+```
+
+Raises `elasticsearch.exceptions.ConnectionError`
 
 ### psycopg2
 
