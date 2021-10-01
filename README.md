@@ -12,6 +12,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [boto3](#boto3)
 - [elasticsearch](#elasticsearch)
 - [opensearch-py](#opensearch-py)
+- [pymemcache](#pymemcache)
 - [psycopg2](#psycopg2)
 - [redis](#redis)
 - [requests](#requests)
@@ -60,6 +61,14 @@ psycopg2.connect(connect_timeout=1)
 ```
 
 Raises `psycopg2.OperationalError`
+
+### pymemcache
+
+```python
+Client(host, connect_timeout=1, timeout=1)
+```
+
+Raises `socket.timeout`
 
 ### redis
 
