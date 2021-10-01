@@ -8,7 +8,6 @@ class TestElasticsearch(TestTimeouts):
         with self.raises(ConnectionError):
             Elasticsearch([self.connect_url()], timeout=1).cluster.health()
 
-    # interferes with requests read test
-    # def test_read(self):
-    #     with self.raises(ConnectionError):
-    #         Elasticsearch([self.read_url()], timeout=1).cluster.health()
+    def test_read(self):
+        with self.raises(ConnectionError):
+            Elasticsearch([self.read_url()], timeout=1).cluster.health()

@@ -1,15 +1,18 @@
 from contextlib import contextmanager
 import pytest
 import socketserver
-from time import perf_counter
+import threading
+from time import perf_counter, sleep
 
 
 class MyTCPHandler(socketserver.BaseRequestHandler):
     def handle(self):
-        pass
+        # TODO figure out better method
+        sleep(2)
 
 
 server = socketserver.TCPServer(('127.0.0.1', 4567), MyTCPHandler)
+threading.Thread(target=server.serve_forever, daemon=True).start()
 
 
 class UnknownTimeoutError(RuntimeError):
