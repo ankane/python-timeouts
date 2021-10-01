@@ -8,10 +8,21 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 
 ## Packages
 
+- [aiohttp](#aiohttp)
 - [boto3](#boto3)
 - [psycopg2](#psycopg2)
 - [redis](#redis)
 - [requests](#requests)
+
+### aiohttp
+
+```python
+timeout = aiohttp.ClientTimeout(total=1)
+async with aiohttp.ClientSession(timeout=timeout) as session:
+    # ...
+```
+
+Raises `asyncio.exceptions.TimeoutError`
 
 ### boto3
 

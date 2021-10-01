@@ -1,5 +1,7 @@
+aiohttp
 boto3
 psycopg2-binary
 pytest
+pytest-asyncio
 redis
 requests
