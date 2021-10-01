@@ -12,6 +12,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [asyncpg](#asyncpg)
 - [boto3](#boto3)
 - [elasticsearch](#elasticsearch)
+- [mongoengine](#mongoengine)
 - [mysqlclient](#mysqlclient)
 - [opensearch-py](#opensearch-py)
 - [psycopg](#psycopg)
@@ -61,6 +62,14 @@ Elasticsearch(timeout=1)
 ```
 
 Raises `elasticsearch.exceptions.ConnectionError`
+
+### mongoengine
+
+```python
+connect(connectTimeoutMS=1000, socketTimeoutMS=1000, serverSelectionTimeoutMS=1000)
+```
+
+Raises `pymongo.errors.ServerSelectionTimeoutError`
 
 ### mysqlclient
 
