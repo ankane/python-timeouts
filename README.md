@@ -15,6 +15,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [pymemcache](#pymemcache)
 - [pymongo](#pymongo)
 - [psycopg2](#psycopg2)
+- [smtplib](#smtplib)
 - [redis](#redis)
 - [requests](#requests)
 
@@ -97,6 +98,17 @@ Raises
 
 - `requests.exceptions.ConnectTimeout` on connect timeout
 - `requests.exceptions.ReadTimeout` on read timeout
+
+### smtplib
+
+```python
+SMTP(host, timeout=1)
+```
+
+Raises
+
+- `socket.timeout` on connect timeout
+- `smtplib.SMTPServerDisconnected` on read timeout
 
 ## Don’t see a library you use?
 
