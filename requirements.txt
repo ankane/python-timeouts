@@ -4,6 +4,7 @@ boto3
 elasticsearch
 mysqlclient
 opensearch-py
+psycopg[binary]==3.0.beta1
 psycopg2-binary
 pymemcache
 pymongo

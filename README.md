@@ -14,6 +14,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [elasticsearch](#elasticsearch)
 - [mysqlclient](#mysqlclient)
 - [opensearch-py](#opensearch-py)
+- [psycopg](#psycopg)
 - [psycopg2](#psycopg2)
 - [pymemcache](#pymemcache)
 - [pymongo](#pymongo)
@@ -76,6 +77,14 @@ OpenSearch(timeout=1)
 ```
 
 Raises `opensearchpy.exceptions.ConnectionError`
+
+### psycopg
+
+```python
+psycopg.connect(connect_timeout=1)
+```
+
+Raises `psycopg.OperationalError`
 
 ### psycopg2
 
