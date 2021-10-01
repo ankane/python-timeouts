@@ -11,6 +11,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [aiohttp](#aiohttp)
 - [boto3](#boto3)
 - [elasticsearch](#elasticsearch)
+- [mysqlclient](#mysqlclient)
 - [opensearch-py](#opensearch-py)
 - [pymemcache](#pymemcache)
 - [pymongo](#pymongo)
@@ -47,6 +48,14 @@ Elasticsearch(timeout=1)
 ```
 
 Raises `elasticsearch.exceptions.ConnectionError`
+
+### mysqlclient
+
+```python
+MySQLdb.connect(connect_timeout=1)
+```
+
+Raises `MySQLdb._exceptions.OperationalError`
 
 ### opensearch-py
 
