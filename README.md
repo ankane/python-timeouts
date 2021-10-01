@@ -23,6 +23,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [requests](#requests)
 - [smtplib](#smtplib)
 - [SQLAlchemy](#SQLAlchemy)
+- [subprocess](#subprocess)
 
 ### aiohttp
 
@@ -158,6 +159,14 @@ create_engine(url, connect_args={'connect_timeout': 1})
 ```
 
 Raises `sqlalchemy.exc.OperationalError`
+
+### subprocess
+
+```python
+run(cmd, timeout=1)
+```
+
+Raises `subprocess.TimeoutExpired`
 
 ## Don’t see a library you use?
 
