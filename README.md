@@ -38,6 +38,8 @@ Raises `asyncio.exceptions.TimeoutError`
 asyncpg.connect(timeout=1)
 ```
 
+Default: 60s
+
 Raises `asyncio.exceptions.TimeoutError`
 
 ### boto3
