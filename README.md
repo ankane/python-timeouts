@@ -18,6 +18,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [smtplib](#smtplib)
 - [redis](#redis)
 - [requests](#requests)
+- [smtplib](#smtplib)
 
 ### aiohttp
 
