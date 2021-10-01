@@ -1,6 +1,7 @@
 aiohttp
 boto3
 elasticsearch
+mysqlclient
 opensearch-py
 psycopg2-binary
 pymemcache
