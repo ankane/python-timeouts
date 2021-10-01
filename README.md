@@ -19,6 +19,7 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [redis](#redis)
 - [requests](#requests)
 - [smtplib](#smtplib)
+- [SQLAlchemy](#SQLAlchemy)
 
 ### aiohttp
 
@@ -120,6 +121,14 @@ Raises
 
 - `socket.timeout` on connect timeout
 - `smtplib.SMTPServerDisconnected` on read timeout
+
+### SQLAlchemy
+
+```python
+create_engine(url, connect_args={'connect_timeout': 1})
+```
+
+Raises `sqlalchemy.exc.OperationalError`
 
 ## Don’t see a library you use?
 
