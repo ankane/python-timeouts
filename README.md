@@ -8,6 +8,14 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 
 ## Packages
 
+Standard library
+
+- [http](#http)
+- [smtplib](#smtplib)
+- [subprocess](#subprocess)
+
+PyPI
+
 - [aiohttp](#aiohttp)
 - [asyncpg](#asyncpg)
 - [boto3](#boto3)
@@ -21,9 +29,38 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 - [pymongo](#pymongo)
 - [redis](#redis)
 - [requests](#requests)
-- [smtplib](#smtplib)
 - [SQLAlchemy](#SQLAlchemy)
-- [subprocess](#subprocess)
+
+## Standard Library
+
+### http
+
+```python
+HTTPConnection(host, port, timeout=1)
+```
+
+Raises `socket.timeout`
+
+### smtplib
+
+```python
+SMTP(host, timeout=1)
+```
+
+Raises
+
+- `socket.timeout` on connect timeout
+- `smtplib.SMTPServerDisconnected` on read timeout
+
+### subprocess
+
+```python
+subprocess.run(cmd, timeout=1)
+```
+
+Raises `subprocess.TimeoutExpired`
+
+## PyPI
 
 ### aiohttp
 
@@ -141,17 +178,6 @@ Raises
 - `requests.exceptions.ConnectTimeout` on connect timeout
 - `requests.exceptions.ReadTimeout` on read timeout
 
-### smtplib
-
-```python
-SMTP(host, timeout=1)
-```
-
-Raises
-
-- `socket.timeout` on connect timeout
-- `smtplib.SMTPServerDisconnected` on read timeout
-
 ### SQLAlchemy
 
 ```python
@@ -159,14 +185,6 @@ create_engine(url, connect_args={'connect_timeout': 1})
 ```
 
 Raises `sqlalchemy.exc.OperationalError`
-
-### subprocess
-
-```python
-subprocess.run(cmd, timeout=1)
-```
-
-Raises `subprocess.TimeoutExpired`
 
 ## Don’t see a library you use?
 
