@@ -7,6 +7,9 @@ from time import perf_counter, sleep
 
 class MyTCPHandler(socketserver.BaseRequestHandler):
     def handle(self):
+        # for debugging
+        # print(self.request.recv(1024))
+
         # TODO figure out better method
         sleep(2)
 
