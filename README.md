@@ -12,6 +12,7 @@ Standard library
 
 - [http](#http)
 - [smtplib](#smtplib)
+- [socket](#socket)
 - [subprocess](#subprocess)
 
 PyPI
