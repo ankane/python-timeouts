@@ -29,7 +29,7 @@ class TestTimeouts:
         with pytest.raises(exception):
             yield
         stop = perf_counter()
-        assert 1 <= (stop - start) < timeout + 1.25
+        assert 1 <= (stop - start) < timeout + .25
 
     def connect_host(self):
         return '10.255.255.1'
