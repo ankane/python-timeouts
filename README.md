@@ -52,6 +52,14 @@ Raises
 - `socket.timeout` on connect timeout
 - `smtplib.SMTPServerDisconnected` on read timeout
 
+### socket
+
+```python
+sock.settimeout(1)
+```
+
+Raises `socket.timeout`
+
 ### subprocess
 
 ```python
