@@ -10,10 +10,15 @@ Here’s how to add timeouts for popular Python packages. **[All have been teste
 
 Standard library
 
+- [ftplib](#ftplib)
 - [http](#http)
+- [imaplib](#imaplib)
+- [nntplib](nntplib)
+- [poplib](#poplib)
 - [smtplib](#smtplib)
 - [socket](#socket)
 - [subprocess](#subprocess)
+- [telnetlib](#telnetlib)
 
 PyPI
 
@@ -34,10 +39,42 @@ PyPI
 
 ## Standard Library
 
+### ftplib
+
+```python
+FTP(host, timeout=1)
+```
+
+Raises `socket.timeout`
+
 ### http
 
 ```python
 HTTPConnection(host, port, timeout=1)
+```
+
+Raises `socket.timeout`
+
+### imaplib
+
+```python
+IMAP4(host, timeout=1)
+```
+
+Raises `socket.timeout`
+
+### nntplib
+
+```python
+NNTP(host, timeout=1)
+```
+
+Raises `socket.timeout`
+
+### poplib
+
+```python
+POP3(host, timeout=1)
 ```
 
 Raises `socket.timeout`
@@ -68,6 +105,14 @@ subprocess.run(cmd, timeout=1)
 ```
 
 Raises `subprocess.TimeoutExpired`
+
+### telnetlib
+
+```python
+Telnet(host, timeout=1)
+```
+
+Raises `socket.timeout`
 
 ## PyPI
 
