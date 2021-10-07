@@ -13,7 +13,7 @@ Standard library
 - [ftplib](#ftplib)
 - [http](#http)
 - [imaplib](#imaplib)
-- [nntplib](nntplib)
+- [nntplib](#nntplib)
 - [poplib](#poplib)
 - [smtplib](#smtplib)
 - [socket](#socket)
