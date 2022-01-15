@@ -14,3 +14,4 @@ pytest-asyncio
 redis
 requests
 SQLAlchemy
+typesense

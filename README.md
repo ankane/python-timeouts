@@ -36,6 +36,7 @@ PyPI
 - [redis](#redis)
 - [requests](#requests)
 - [SQLAlchemy](#SQLAlchemy)
+- [typesense](#typesense)
 
 ## Standard Library
 
@@ -239,6 +240,17 @@ create_engine(url, connect_args={'connect_timeout': 1})
 ```
 
 Raises `sqlalchemy.exc.OperationalError`
+
+### typesense
+
+```python
+Client({'connection_timeout_seconds': 1})
+```
+
+Raises
+
+- `requests.exceptions.ConnectTimeout` on connect timeout
+- `requests.exceptions.ReadTimeout` on read timeout
 
 ## Don’t see a library you use?
 
