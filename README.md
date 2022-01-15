@@ -38,6 +38,7 @@ PyPI
 - [redis](#redis)
 - [requests](#requests)
 - [SQLAlchemy](#SQLAlchemy)
+- [trino](#trino)
 - [typesense](#typesense)
 
 ## Standard Library
@@ -263,6 +264,19 @@ create_engine(url, connect_args={'connect_timeout': 1})
 ```
 
 Raises `sqlalchemy.exc.OperationalError`
+
+### trino
+
+```python
+trino.dbapi.connect(request_timeout=1)
+# or
+trino.dbapi.connect(request_timeout=(1, 1)) # (connect, read)
+```
+
+Raises
+
+- `requests.exceptions.ConnectTimeout` on connect timeout
+- `requests.exceptions.ReadTimeout` on read timeout
 
 ### typesense
 
