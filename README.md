@@ -27,6 +27,7 @@ PyPI
 - [boto3](#boto3)
 - [cassandra-driver](#cassandra-driver)
 - [elasticsearch](#elasticsearch)
+- [httpx](#httpx)
 - [mongoengine](#mongoengine)
 - [mysqlclient](#mysqlclient)
 - [opensearch-py](#opensearch-py)
@@ -164,6 +165,17 @@ Elasticsearch(timeout=1)
 ```
 
 Raises `elasticsearch.exceptions.ConnectionError`
+
+### httpx
+
+```python
+httpx.get(url, timeout=1)
+```
+
+Raises
+
+- `httpx.ConnectTimeout` on connect timeout
+- `httpx.ReadTimeout` on read timeout
 
 ### mongoengine
 

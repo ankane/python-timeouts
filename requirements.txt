@@ -3,6 +3,7 @@ asyncpg
 boto3
 cassandra-driver
 elasticsearch
+httpx
 mongoengine
 mysqlclient
 opensearch-py
