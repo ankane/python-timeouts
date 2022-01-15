@@ -4,6 +4,7 @@ boto3
 cassandra-driver
 elasticsearch
 httpx
+influxdb
 mongoengine
 mysqlclient
 opensearch-py

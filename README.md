@@ -28,6 +28,7 @@ PyPI
 - [cassandra-driver](#cassandra-driver)
 - [elasticsearch](#elasticsearch)
 - [httpx](#httpx)
+- [influxdb](#influxdb)
 - [mongoengine](#mongoengine)
 - [mysqlclient](#mysqlclient)
 - [opensearch-py](#opensearch-py)
@@ -179,6 +180,17 @@ Raises
 
 - `httpx.ConnectTimeout` on connect timeout
 - `httpx.ReadTimeout` on read timeout
+
+### influxdb
+
+```python
+InfluxDBClient(timeout=1)
+```
+
+Raises
+
+- `requests.exceptions.ConnectTimeout` on connect timeout
+- `requests.exceptions.ReadTimeout` on read timeout
 
 ### mongoengine
 
