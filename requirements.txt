@@ -1,6 +1,7 @@
 aiohttp
 asyncpg
 boto3
+cassandra-driver
 elasticsearch
 mongoengine
 mysqlclient

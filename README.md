@@ -25,6 +25,7 @@ PyPI
 - [aiohttp](#aiohttp)
 - [asyncpg](#asyncpg)
 - [boto3](#boto3)
+- [cassandra-driver](#cassandra-driver)
 - [elasticsearch](#elasticsearch)
 - [mongoengine](#mongoengine)
 - [mysqlclient](#mysqlclient)
@@ -147,6 +148,14 @@ Raises
 
 - `botocore.exceptions.ConnectTimeoutError` on connect timeout
 - `botocore.exceptions.ReadTimeoutError` on read timeout
+
+### cassandra-driver
+
+```python
+Cluster([host], connect_timeout=1)
+```
+
+Raises `cassandra.cluster.NoHostAvailable` on connect timeout
 
 ### elasticsearch
 
