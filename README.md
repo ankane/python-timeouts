@@ -170,6 +170,8 @@ Raises `elasticsearch.exceptions.ConnectionError`
 
 ```python
 httpx.get(url, timeout=1)
+# or
+httpx.Client(timeout=1)
 ```
 
 Raises
