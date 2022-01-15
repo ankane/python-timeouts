@@ -38,6 +38,7 @@ PyPI
 - [pymongo](#pymongo)
 - [redis](#redis)
 - [requests](#requests)
+- [scs](#scs)
 - [SQLAlchemy](#SQLAlchemy)
 - [trino](#trino)
 - [typesense](#typesense)
@@ -268,6 +269,14 @@ Raises
 
 - `requests.exceptions.ConnectTimeout` on connect timeout
 - `requests.exceptions.ReadTimeout` on read timeout
+
+### scs
+
+```python
+sol = scs.solve(data, cone, time_limit_secs=1)
+```
+
+Check for a `sol['info']['status']` of `solved (inaccurate - reached time_limit_secs)` for a timeout
 
 ### SQLAlchemy
 

@@ -16,6 +16,7 @@ pytest
 pytest-asyncio
 redis
 requests
+scs
 SQLAlchemy
 trino
 typesense
