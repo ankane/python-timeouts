@@ -8,7 +8,7 @@ influxdb
 mongoengine
 mysqlclient
 opensearch-py
-psycopg[binary]==3.0.beta1
+psycopg[binary]
 psycopg2-binary
 pymemcache
 pymongo
