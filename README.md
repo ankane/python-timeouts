@@ -165,10 +165,10 @@ Raises `cassandra.cluster.NoHostAvailable` on connect timeout
 ### elasticsearch
 
 ```python
-Elasticsearch(timeout=1)
+Elasticsearch(request_timeout=1)
 ```
 
-Raises `elasticsearch.exceptions.ConnectionError`
+Raises `elastic_transport.ConnectionTimeout`
 
 ### httpx
 

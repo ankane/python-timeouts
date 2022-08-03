@@ -1,13 +1,13 @@
 from .conftest import TestTimeouts
 from elasticsearch import Elasticsearch
-from elasticsearch.exceptions import ConnectionError
+from elastic_transport import ConnectionTimeout
 
 
 class TestElasticsearch(TestTimeouts):
     def test_connect(self):
-        with self.raises(ConnectionError):
-            Elasticsearch([self.connect_url()], timeout=1).cluster.health()
+        with self.raises(ConnectionTimeout):
+            Elasticsearch(self.connect_url() + str(":80"), request_timeout=1).cluster.health()
 
     def test_read(self):
-        with self.raises(ConnectionError):
-            Elasticsearch([self.read_url()], timeout=1).cluster.health()
+        with self.raises(ConnectionTimeout):
+            Elasticsearch(self.read_url(), request_timeout=1).cluster.health()
