@@ -42,6 +42,7 @@ PyPI
 - [SQLAlchemy](#SQLAlchemy)
 - [trino](#trino)
 - [typesense](#typesense)
+- [urllib3](#urllib3)
 
 ## Standard Library
 
@@ -309,6 +310,16 @@ Raises
 
 - `requests.exceptions.ConnectTimeout` on connect timeout
 - `requests.exceptions.ReadTimeout` on read timeout
+
+### urllib3
+
+```python
+http = urllib3.PoolManager(timeout=urllib3.Timeout(connect=1, read=1))
+# or
+http.request('GET', url, timeout=urllib3.Timeout(connect=1, read=1))
+```
+
+Raises `urllib3.exceptions.MaxRetryError`
 
 ## Don’t see a library you use?
 

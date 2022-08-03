@@ -20,3 +20,4 @@ scs
 SQLAlchemy
 trino
 typesense
+urllib3
