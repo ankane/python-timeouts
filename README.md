@@ -72,6 +72,8 @@ IMAP4(host, timeout=1)
 
 Raises `socket.timeout`
 
+**Note:** Requires Python 3.9+
+
 ### nntplib
 
 ```python
