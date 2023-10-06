@@ -21,6 +21,7 @@ Standard library
 - [socket](#socket)
 - [subprocess](#subprocess)
 - [telnetlib](#telnetlib)
+- [urllib](#urllib)
 
 PyPI
 
@@ -124,6 +125,15 @@ Telnet(host, timeout=1)
 ```
 
 Raises `socket.timeout`
+
+### urllib
+
+```python
+req = Request(url)
+urlopen(req, timeout=1)
+```
+
+Raises `urllib.error.URLError`
 
 ## PyPI
 
