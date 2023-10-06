@@ -4,6 +4,8 @@ import socketserver
 import threading
 from time import perf_counter, sleep
 
+port = None
+
 
 class MyTCPHandler(socketserver.BaseRequestHandler):
     def handle(self):
@@ -14,8 +16,15 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
         sleep(2)
 
 
-server = socketserver.TCPServer(('127.0.0.1', 4567), MyTCPHandler)
-threading.Thread(target=server.serve_forever, daemon=True).start()
+@pytest.fixture(scope="session", autouse=True)
+def start_server(worker_id):
+    global port
+    port = 4567
+    if worker_id != 'master':
+        port += int(worker_id[2:])
+
+    server = socketserver.TCPServer(('127.0.0.1', port), MyTCPHandler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
 
 
 class UnknownTimeoutError(RuntimeError):
@@ -41,7 +50,7 @@ class TestTimeouts:
         return '127.0.0.1'
 
     def read_port(self):
-        return 4567
+        return port
 
     def read_host_and_port(self):
         return self.read_host() + ':' + str(self.read_port())
