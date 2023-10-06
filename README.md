@@ -133,7 +133,10 @@ req = Request(url)
 urlopen(req, timeout=1)
 ```
 
-Raises `urllib.error.URLError`
+Raises
+
+- `urllib.error.URLError` on connect timeout
+- `socket.timeout` on read timeout
 
 ## PyPI
 
