@@ -311,10 +311,7 @@ trino.dbapi.connect(request_timeout=1)
 trino.dbapi.connect(request_timeout=(1, 1)) # (connect, read)
 ```
 
-Raises
-
-- `requests.exceptions.ConnectTimeout` on connect timeout
-- `requests.exceptions.ReadTimeout` on read timeout
+Raises `trino.exceptions.TrinoConnectionError`
 
 ### typesense
 
