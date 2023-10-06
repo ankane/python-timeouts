@@ -16,7 +16,7 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
         sleep(2)
 
 
-@pytest.fixture(scope="session", autouse=True)
+@pytest.fixture(scope='session', autouse=True)
 def start_server(worker_id):
     global port
     port = 4567
