@@ -129,8 +129,7 @@ Raises `socket.timeout`
 ### urllib
 
 ```python
-req = Request(url)
-urlopen(req, timeout=1)
+urlopen(url, timeout=1)
 ```
 
 Raises
