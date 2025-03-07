@@ -4,7 +4,7 @@ An unresponsive service can be worse than a down one. It can tie up your entire 
 
 Here’s how to add timeouts for popular Python packages. **[All have been tested](tests)**. The default is no timeout, unless otherwise specified. Enjoy!
 
-Also available for [Ruby](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts), [Node](https://github.com/ankane/node-timeouts), [Go](https://github.com/ankane/go-timeouts), and [Rust](https://github.com/ankane/rust-timeouts)
+Also available for [Ruby](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts), [Node](https://github.com/ankane/node-timeouts), [Go](https://github.com/ankane/go-timeouts), [PHP](https://github.com/ankane/php-timeouts), and [Rust](https://github.com/ankane/rust-timeouts)
 
 [![Build Status](https://github.com/ankane/python-timeouts/actions/workflows/build.yml/badge.svg)](https://github.com/ankane/python-timeouts/actions)
 
