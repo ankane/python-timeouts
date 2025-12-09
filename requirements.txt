@@ -12,6 +12,7 @@ osqp
 pg8000
 psycopg[binary]
 psycopg2-binary
+PyGithub
 pymemcache
 pymongo
 pytest

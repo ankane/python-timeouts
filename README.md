@@ -38,7 +38,7 @@ Data Stores
 - [pymemcache](#pymemcache)
 - [pymongo](#pymongo)
 - [redis](#redis)
-- [SQLAlchemy](#SQLAlchemy)
+- [SQLAlchemy](#sqlalchemy)
 - [trino](#trino)
 - [typesense](#typesense)
 - [valkey](#valkey)
@@ -58,6 +58,7 @@ Solvers
 3rd Party Services
 
 - [boto3](#boto3)
+- [PyGithub](#pygithub)
 - [stripe](#stripe)
 
 ## Standard Library
@@ -381,6 +382,17 @@ Raises
 
 - `botocore.exceptions.ConnectTimeoutError` on connect timeout
 - `botocore.exceptions.ReadTimeoutError` on read timeout
+
+### PyGithub
+
+```python
+Github(timeout=1)
+```
+
+Raises
+
+- `requests.exceptions.ConnectTimeout` on connect timeout
+- `requests.exceptions.ReadTimeout` on read timeout
 
 ### stripe
 
