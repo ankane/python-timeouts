@@ -35,6 +35,7 @@ PyPI
 - [mongoengine](#mongoengine)
 - [mysqlclient](#mysqlclient)
 - [opensearch-py](#opensearch-py)
+- [pg8000](#pg8000)
 - [psycopg](#psycopg)
 - [psycopg2](#psycopg2)
 - [pymemcache](#pymemcache)
@@ -233,6 +234,17 @@ OpenSearch(timeout=1)
 ```
 
 Raises `opensearchpy.exceptions.ConnectionError`
+
+### pg8000
+
+```python
+pg8000.connect(timeout=1)
+```
+
+Raises
+
+- `pg8000.exceptions.InterfaceError` on connect timeout
+- `socket.timeout` on read timeout
 
 ### psycopg
 
