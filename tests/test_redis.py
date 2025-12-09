@@ -6,7 +6,7 @@ from redis.exceptions import TimeoutError
 class TestRedis(TestTimeouts):
     def test_connect(self):
         with self.raises(TimeoutError):
-            Redis(host=self.connect_host(), socket_connect_timeout=1).ping()
+            Redis(host=self.connect_host(), socket_connect_timeout=1, retry=None).ping()
 
     def test_read(self):
         with self.raises(TimeoutError):
