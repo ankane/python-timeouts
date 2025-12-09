@@ -57,6 +57,7 @@ Solvers
 3rd Party Services
 
 - [boto3](#boto3)
+- [stripe](#stripe)
 
 ## Standard Library
 
@@ -369,6 +370,14 @@ Raises
 
 - `botocore.exceptions.ConnectTimeoutError` on connect timeout
 - `botocore.exceptions.ReadTimeoutError` on read timeout
+
+### stripe
+
+```python
+StripeClient(api_key, http_client=stripe.RequestsClient(timeout=1))
+```
+
+Raises `stripe.APIConnectionError`
 
 ## Don’t see a library you use?
 

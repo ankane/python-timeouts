@@ -20,6 +20,7 @@ redis
 requests
 scs
 SQLAlchemy
+stripe
 trino
 typesense
 urllib3
