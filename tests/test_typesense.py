@@ -10,8 +10,7 @@ class TestTypesense(TestTimeouts):
             'nodes': [{'host': self.connect_host(), 'port': 8108, 'protocol': 'http'}],
             'connection_timeout_seconds': 1,
             'num_retries': 0,
-            'retry_interval_seconds': 0,
-            'suppress_deprecation_warnings': True
+            'retry_interval_seconds': 0
         })
 
         with self.raises(ConnectTimeout):
@@ -23,8 +22,7 @@ class TestTypesense(TestTimeouts):
             'nodes': [{'host': self.read_host(), 'port': self.read_port(), 'protocol': 'http'}],
             'connection_timeout_seconds': 1,
             'num_retries': 0,
-            'retry_interval_seconds': 0,
-            'suppress_deprecation_warnings': True
+            'retry_interval_seconds': 0
         })
 
         with self.raises(ReadTimeout):
