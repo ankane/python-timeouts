@@ -6,9 +6,9 @@ import scipy
 
 class TestOsqp(TestTimeouts):
     def test_solve(self):
-        P = scipy.sparse.coo_matrix(np.array([[4, 1], [0, 2]])).tocsc()
+        P = scipy.sparse.coo_matrix([[4, 1], [0, 2]]).tocsc()
         q = np.array([1, 1])
-        A = scipy.sparse.coo_matrix(np.array([[1, 1], [1, 0], [0, 1]])).tocsc()
+        A = scipy.sparse.coo_matrix([[1, 1], [1, 0], [0, 1]]).tocsc()
         l = np.array([1, 0, 0])
         u = np.array([1, 0.7, 0.7])
 
