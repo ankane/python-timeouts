@@ -47,6 +47,7 @@ PyPI
 - [trino](#trino)
 - [typesense](#typesense)
 - [urllib3](#urllib3)
+- [valkey](#valkey)
 
 ## Standard Library
 
@@ -345,6 +346,14 @@ http.request('GET', url, timeout=urllib3.Timeout(connect=1, read=1))
 ```
 
 Raises `urllib3.exceptions.MaxRetryError`
+
+### valkey
+
+```python
+Valkey(socket_connect_timeout=1, socket_timeout=1)
+```
+
+Raises `valkey.exceptions.TimeoutError`
 
 ## Don’t see a library you use?
 
