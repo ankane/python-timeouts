@@ -357,7 +357,7 @@ sol = scs.solve(data, cone, time_limit_secs=1)
 
 Check for a `sol['info']['status']` of `solved (inaccurate - reached time_limit_secs)` for a timeout
 
-## Third Party Services
+## 3rd Party Services
 
 ### boto3
 
