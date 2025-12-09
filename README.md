@@ -356,9 +356,10 @@ Raises `urllib3.exceptions.MaxRetryError`
 ```python
 m = osqp.OSQP()
 m.setup(..., time_limit=1)
+results = m.solve()
 ```
 
-Check the solve result for an `info.status` of `run time limit reached` for a timeout
+Check for a `results.info.status` of `run time limit reached` for a timeout
 
 ### scs
 

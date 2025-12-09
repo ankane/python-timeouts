@@ -14,5 +14,5 @@ class TestOsqp(TestTimeouts):
 
         m = osqp.OSQP()
         m.setup(P=P, q=q, A=A, l=l, u=u, alpha=1.0, time_limit=0.000001)
-        result = m.solve(raise_error=False)
-        assert result.info.status == 'run time limit reached'
+        results = m.solve(raise_error=False)
+        assert results.info.status == 'run time limit reached'
