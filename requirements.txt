@@ -8,6 +8,7 @@ influxdb
 mongoengine
 mysqlclient
 opensearch-py
+osqp
 pg8000
 psycopg[binary]
 psycopg2-binary

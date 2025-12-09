@@ -52,6 +52,7 @@ HTTP Clients
 
 Solvers
 
+- [osqp](#osqp)
 - [scs](#scs)
 
 3rd Party Services
@@ -349,6 +350,15 @@ http.request('GET', url, timeout=urllib3.Timeout(connect=1, read=1))
 Raises `urllib3.exceptions.MaxRetryError`
 
 ## Solvers
+
+### osqp
+
+```python
+m = osqp.OSQP()
+m.setup(..., time_limit=1)
+```
+
+Check the solve result for an `info.status` of `run time limit reached` for a timeout
 
 ### scs
 
