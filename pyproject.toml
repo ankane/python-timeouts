@@ -1,0 +1,41 @@
+[project]
+name = "python-timeouts"
+version = "0.1.0"
+requires-python = ">= 3.9"
+
+[dependency-groups]
+dev = [
+    "aiohttp",
+    "asyncpg",
+    "boto3",
+    "cassandra-driver",
+    "elasticsearch",
+    "httpx",
+    "influxdb",
+    "mongoengine",
+    "mysqlclient",
+    "opensearch-py",
+    "osqp",
+    "pg8000",
+    "psycopg[binary]",
+    "psycopg2-binary",
+    "PyGithub",
+    "pymemcache",
+    "pymongo",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-xdist",
+    "redis",
+    "requests",
+    "scs",
+    "SQLAlchemy",
+    "stripe",
+    "trino",
+    "typesense",
+    "urllib3",
+    "valkey"
+]
+
+[tool.pytest.ini_options]
+addopts = "-n auto"
+asyncio_mode = "auto"
