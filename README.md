@@ -411,7 +411,7 @@ Raises `stripe.APIConnectionError`
 ```sh
 git clone https://github.com/ankane/python-timeouts.git
 cd python-timeouts
-pip install -r requirements.txt
+pip install --group dev
 ```
 
 To run all tests, use:
