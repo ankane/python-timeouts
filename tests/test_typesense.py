@@ -1,6 +1,6 @@
 from .conftest import TestTimeouts
 from typesense import Client
-from requests.exceptions import ConnectTimeout, ReadTimeout
+from httpx import ConnectTimeout, ReadTimeout
 
 
 class TestTypesense(TestTimeouts):

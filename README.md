@@ -293,8 +293,8 @@ Client({'connection_timeout_seconds': 1})
 
 Raises
 
-- `requests.exceptions.ConnectTimeout` on connect timeout
-- `requests.exceptions.ReadTimeout` on read timeout
+- `httpx.ConnectTimeout` on connect timeout
+- `httpx.ReadTimeout` on read timeout
 
 ### valkey
 
