@@ -10,4 +10,4 @@ class TestRedis(TestTimeouts):
 
     def test_read(self):
         with self.raises(TimeoutError):
-            Redis(host=self.read_host(), port=self.read_port(), socket_timeout=1, driver_info=None, protocol=2).ping()
+            Redis(host=self.read_host(), port=self.read_port(), socket_timeout=1, retry=None, driver_info=None, protocol=2).ping()
